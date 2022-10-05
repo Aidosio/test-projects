@@ -1,8 +1,8 @@
 <template>
   <vTitle title="Входные данные"/>
   <div class="block">
-    <vInput label="Строка А" id="a" model-value.trim="a"/>
-    <vInput label="Строка Б" id="b" model-value.trim="b"/>
+    <vInput label="Строка А" id="a" v-model.trim="a"/>
+    <vInput label="Строка Б" id="b" v-model.trim="b"/>
   </div>
   <vTitle title="Резултат"/>
   <vResult v-if="a === ''" :class="{red: false}" :result="search(a.toLowerCase(), b.toLowerCase())" />

@@ -1,6 +1,6 @@
 <template>
   <vTitle title="Входные данные"/>
-  <vInput label="Введити палиндром" id="a" model-value.trim="a"/>
+  <vInput label="Введити палиндром" id="a" v-model.trim="a"/>
   <vTitle title="Резултат"/>
   <vResult v-if="a === ''" result="Напишите палиндром" />
   <div v-else :class="{red : true}">
